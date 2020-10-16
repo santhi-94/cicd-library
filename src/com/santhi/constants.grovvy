@@ -1,2 +1,6 @@
 #!/usr/bin/env groovy
-github_Creds="santhi.sshkeys"
+package com.santhi
+
+class Constants{
+	static final github_Creds="github-creds"
+}
