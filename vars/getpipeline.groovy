@@ -14,7 +14,7 @@ else{
 	println "please check the branch Naming Convention.. It should be either feature/dev/devlopment/release/master/hotfix "
 }
 }
-def BranchName(){
+def branchName(){
 	return env.BRANCH_NAME
 }
 
