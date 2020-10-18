@@ -1,4 +1,5 @@
 def call(){ 
+
 	def BranchName=branchName()
 
 	if (isFeature(BranchName) || isDev(BranchName)){
@@ -21,15 +22,19 @@ def branchName(){
 def isPR(){
 	if(env.BRANCH_NAME ==~ /PR-\d+/){ return true }
 }
+
 def isRelease(String BranchName){
 	if(BranchName.toLowerCase() ==~ /^release\//){ return true }
 }
+
 def isFeature(String BranchName){
 	if(BranchName.toLowerCase() ==~ /^feature\//){ return true}
 }
+
 def isDev(String BranchName){
 	if(BranchName.toLowerCase() ==~ /^develop$/ || BranchName.toLowerCase() ==~ /^dev$/){ return true }	
 }
+
 def ismaster(String BranchName){
 	if(BranchName.toLowerCase() ==~ /^master$/ || BranchName.toLowerCase() ==~ /^hotfix$/){return true}	
 }
