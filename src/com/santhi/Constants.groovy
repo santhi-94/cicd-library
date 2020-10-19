@@ -2,5 +2,5 @@
 package com.santhi
 
 class Constants{
-	static final github_Creds="github-creds"
+        static final github_Creds="github-creds"
 }
