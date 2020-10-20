@@ -20,15 +20,15 @@ def branchName(){
 }
 
 def isPR(){
-	if(env.BRANCH_NAME ==~ /PR-\d+/){ return true }
+	if(env.BRANCH_NAME ==~ /PR-\d+$/){ return true }
 }
 
 def isRelease(String BranchName){
-	if(BranchName.toLowerCase() =~ /^release\//){ return true }
+	if(BranchName.toLowerCase() =~ /^release\/$/){ return true }
 }
 
 def isFeature(String BranchName){
-	if(BranchName.toLowerCase() =~ /^feature\//){ return true}
+	if(BranchName.toLowerCase() =~ /^feature\/$/){ return true}
 }
 
 def isDev(String BranchName){
